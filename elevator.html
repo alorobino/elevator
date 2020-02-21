@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="elevator.js"></script>
+  </head>
+  <body>
+    <div id="container">
+          <div><button class="click-me">5</button></div>
+          <div><button class="click-me">4</button></div>
+          <div><button class="click-me">3</button></div>
+          <div><button class="click-me">2</button></div>
+          <div><button class="click-me">1</button></div>
+      <div id="lift">
+        <button class="click-me">1</button>
+      <button class="click-me">2</button>
+      <button class="click-me">3</button>
+      <button class="click-me">4</button>
+      <button class="click-me">5</button>
+      </div>
+
+    </div>
+  </body>
+
+  <style>
+  body {
+      margin:0;
+      padding:0;
+  }
+    #container {
+      height:500px;
+      width:500px;
+    }
+    #lift {
+      height:100px;
+      width:100px;
+      background-color:orange;
+      position: fixed;
+      transition: top 1s;
+      left:0;
+      top: 400px;
+
+ }
+  #lift .click-me {
+    margin-top: 0;
+    margin-left: 0;
+    height: initial;
+  }
+
+    .click-me {
+      margin-left:120px;
+      height:100px;
+}
+
+  </style>
+</html>
